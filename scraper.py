@@ -90,6 +90,8 @@ class StreamListener(tweepy.StreamListener):
             #     user_created=user_created_at,
             #     geo=geo,
             #     coordinates=coords,
+            #     was_retweet_id = was_retweet_id,
+            #     was_retweet_user = was_retweet_user,
             #     user_followers_count=followers_count,
             #     user_friends_count=friends_count,
             #     retweet_count=retweet_count,
@@ -118,9 +120,9 @@ TABLE_ATTRIBUTES = "created_at TIMESTAMP, id_str VARCHAR(255), text VARCHAR(255)
             user_name VARCHAR(255), user_location VARCHAR(255), user_description VARCHAR(255), user_created VARCHAR(255), \
             geo VARCHAR(255), coordinates VARCHAR(255), \
             user_followers_count INT, user_friends_count INT, \
-            retweet_count INT, favorites_count INT, polarity INT, subjectivity INT"
+            retweet_count INT, favorites_count INT, polarity DOUBLE PRECISION, subjectivity DOUBLE PRECISION"
 
-TABLE_NAME = "dynamite"
+TABLE_NAME = "dynamite24"
 
 # CONNECTION_STRING = "sqlite:///elite.db"
 # DATABASE_URL = CONNECTION_STRING
