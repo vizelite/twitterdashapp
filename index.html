@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159284321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159284321-1');
+</script>
+
+  <meta charset="UTF-8">
+  <title>Visualizing the Elite</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand smothscroll" href="#home"><b></b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home" class="smothscroll">Home</a></li>
+          <!-- <li><a href="#section_locations" class="smothscroll">Locations</a></li>
+          <li><a href="#section_ranking" class="smothscroll">Rankings</a></li>
+          <li><a href="#section_matches" class="smothscroll">Matches</a></li>
+          <li><a href="#section_times" class="smothscroll">Times</a></li>
+          <li><a href="#section_wednesday" class="smothscroll">Wednesday Night Wars</a></li>
+          <li><a href="#section_activity" class="smothscroll">Activity</a></li>-->
+          <li><a href="#section_details" class="smothscroll">Data</a></li> 
+          <!-- <li><a href="#section_aboutme" class="smothscroll">About</a></li> -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <section id="home" name="home">
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-12">
+            <h1>Visualizing the Elite</b></h1>
+            <h3>AEW Dynamite Twitter Activity Report</h3>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!--/ .container -->
+    </div>
+    <!--/ #headerwrap -->
+  </section>
+
+  <section id="section_intro" name="section_intro">
+    <br><br><br>
+    <div id="sectionintro">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">Motivation</h1>
+          <br>
+          <br>
+          <div class="col-lg-12">
+            <p>
+              Visualizing the Elite combines two things I really enjoy: 
+              professional wrestling and data analytics.
+              The motivation behind this project 
+            </p>
+            <p>  
+              Feedback and comments are always welcomed. 
+              Find me on Twitter <a href="https://twitter.com/vizelitedotcom">@vizelitedotcom</a>
+              or send me an email at visualizingtheelite at gmail dot com.
+            </p>
+          </div>
+        </div>
+        <br>
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  <section id="section_locations" name="section_locations">
+    <br><br><br>
+    <div id="locations">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">Live Events Map</h1>
+          <p class="centered">(to date)</p>
+          <br>
+          <br>
+          <div class="col-lg-4">
+            <p>This map displays all the cities that have hosted AEW events 
+              since its official inception in May of 2019.
+            </p>
+          </div>
+          <div class="col-lg-8">
+           </div>
+        </div>
+        <br>
+        <hr>
+      </div>
+      <!--/ .container -->
+    </div>
+  </section>
+
+  <section id="section_ranking" name="section_ranking">
+    <br><br><br>
+    <div id="rankings">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">Wrestling Rankings for 2020</h1>
+          <p class="centered">Do Wins and Losses Matter?</p>
+          <div class="col-lg-12">
+          <p>
+            The following interactive chart shows the win/loss records for all the wrestlers 
+            from all AEW events within the selected timeframe.
+            Note that all matches aired on Pay Per View events, Dynamite, and Dark are 
+            counted in the data. 
+            This includes unsanctioned matches, battles royal, and unofficial matches.
+            Singles matches are classified as one-on-one matches involving at most two wrestlers.
+            Tag Team matches are classified as two-on-two matches involving at most four wrestlers.
+            Others include all other matches that are not Singles or Tag Team matches.
+         </p>
+         <b>Findings (based on 2020):</b>
+          </div>
+          <div class="col-lg-6">
+            <p>
+            <ul>
+              <li><b>Biggest Winner (Singles):</b>
+                <br>Jon Moxley (champion) takes the lead the highest percentage of wins as well as 
+                the greatest number of singles matches. He's never lost a singles match and 
+                only faced a time limit draw once during a match against PAC on Dynamite on 
+                Oct 23, 2019. In fact, he's only been on the losing side once, and that was 
+                during a tag team match the week before on Dynamite on Oct 16, 2019, where 
+                Jon Moxley and PAC lost against Kenny Omega and Adam Page.
+              </li>
+            </ul>
+          </p> 
+          </div>
+          <div class="col-lg-6">
+            <p>    
+              <ul>   
+                <li><b>Female Divison (Singles):</b>
+                  <br>Nyla Rose (champion) has the greatest number of wins in singles matches and
+                  also undefeated for this year.</li>
+                  <br>   
+              <li><b>Biggest Winners (Tag Team):</b>
+                <br>Kenny Omega and Adam Page (champions) and 
+                Dark Order (Stu Grayson and Evil Uno) are both undefeated in 
+                two-on-two Tag Team matches.
+              </li>
+              </ul>
+          </p> 
+          </div>
+        </div>
+        <br>
+        <div class="col-lg-12">
+      <b>Findings (based on AEW history):</b>
+    </div>
+      <div class="col-lg-6">
+        <p>
+          <ul>
+            <li><b>Biggest Losers (Overall based on AEW history):</b>
+              <br>When looking at total matches, Peter Avalon and Brandon Cutler 
+              have never been on the winning side of a match.
+            </li>
+            <br>
+          </ul>
+      </p> 
+      </div>
+      <div class="col-lg-6">
+        <p>           
+        <ul>
+          <li><b>No Win Club (Singles based on AEW history):</b>
+            <br>Brandon Cutler and Leva Bates leads with most 
+            losses and zero wins in 
+            singles matches for male and female division, respectively.
+          </li>
+        </ul>
+      </p> 
+      </div>
+    <br>
+        <div class="col-lg-12">
+          <p>
+            <b>How to use the chart:</b>
+            <ul>
+              <li>By default, the chart shows the records since January, 2020. 
+                Use the slider to choose a different timeframe and look at previous records.
+              </li>
+              <li>Filter results by event show (PPV, Dynamite, Dark).
+              </li>
+              <li>Filter results by singles, tag team, others, or all matches.
+              </li>
+              <li>Sort results by total wins, total losses, or total number of matches.
+              </li>
+            </ul>
+          </p>
+          <div class='tableauPlaceholder' id='viz1582581135956' style='position: relative'><noscript><a href='https:&#47;&#47;cinhui.github.io&#47;visualizingtheelite&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AE&#47;AEW2019&#47;WrestlerRanking&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AEW2019&#47;WrestlerRanking' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AE&#47;AEW2019&#47;WrestlerRanking&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1582581135956');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='700px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      </div>
+        <hr>
+        </div>
+      <!--/ .container -->
+    </div>
+  </section>
+
+  <section id="section_matches" name="section_matches">
+    <br><br><br>
+    <div id="matches">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">Most Utilized Wrestlers in 2020</h1>
+          <p class="centered">(Jan. 1st to present)</p>
+          <div class="col-lg-12">
+          <p>
+            This chart identifies key players in AEW, along with up-and-coming wrestlers, 
+            enhancement talents, and occasional featured wrestlers. It can be used to 
+            answer questions like: Who has never been in a singles match in 2020/all-time? 
+            Which wrestlers with similar win/loss stats would be interesting to go 
+            head to head with?
+          </p>
+        <b>Findings (based on 2020):</b>
+         </div>
+          <div class="col-lg-6">
+            <p>
+            <ul>
+              <li><b>Most Matches (Overall):</b>
+                <br>Kenny Omega has been in the most number of matches in the ring.
+              </li>
+              <br>
+              <li><b>Most Matches in Men's Division (Singles):</b>
+                <br>Jon Moxley have been in the most singles matches to date.</li>
+              </li>
+              <br>
+              <li><b>Most Matches in Women's Division (Singles):</b>
+                <br>Nyla Rose, Kris Statlander, and Big Swhole have been in the most singles matches to date.
+              </li>
+            </ul>
+          </p>
+          </div>
+          <div class="col-lg-6">
+            <p>           
+            </p> 
+            <ul>
+              <li><b>Most Matches (Tag Team):</b>
+                <br>Kenny Omega & Adam Page, The Dark Order (Evil Uno & Stu Grayson), 
+                and SCU (Scorpio Sky & Frankie Kazarian)
+                have the most tag team matches. 
+                Shawn Spear also takes the lead in number of tag team matches, 
+                but with no consistent tag team parter and no wins.
+              </li>
+              <br>
+            </ul>
+          </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-lg-12">
+          <p>
+            <b>How to use the chart:</b>
+            <ul>
+              <li>By default, the chart shows the records since January, 2020. 
+                Use the slider to choose a different timeframe.
+              </li>
+              <li>Filter results by event show (PPV, Dynamite, Dark).
+              </li>
+              <li>Sort results by total matches, total singles matches, total tag team matches, or total other matches.
+              </li>
+            </ul>
+          </p>
+      </div>
+        <hr>
+      </div>
+      <!--/ .container -->
+    </div>
+  </section>
+
+  <section id="section_times" name="section_times">
+    <br><br><br>
+    <div id="times">
+      <div class="container">
+        <div class="row">
+          <h1 class="centered">Matches Times in AEW History</h1>
+          <p class="centered">(as of March 11, 2020)</p>
+          <div class="col-lg-12">
+          <p>
+            This chart displays all AEW matches sorted by the length of the match. 
+            Matches with missing match times were excluded from the analysis.
+            The longest matches tend to be pay-per-view headlining matches. 
+            Two exceptions were special attraction matches: Kenny Omega vs PAC Iron Man match on Dynamite on Feb. 26, 2020 
+            and the Kenny Omega vs Joey Janela match on Dark on Oct 9, 2020. 
+            The average match lasts about 11 minutes and 36 seconds. 
+            The average singles match lasts about 10 minutes and 50 seconds. 
+            The average tag team match lasts about 12 minutes and 28 seconds.           
+          </p>
+          <b>Interesting Statistics:</b>
+          </div>
+          <div class="col-lg-6">
+            <p>           
+            <ul>
+              <li><b>38 minutes and 46 seconds:</b> The length of the longest singles match in AEW history -- between Jon Moxley and Kenny Omega at Full Gear.</li>
+              <br><li><b>31 minutes and 26 seconds:</b> The length of the longest tag team match -- between The Young Bucks (Matt Jackson & Nick Jackson) and the Brotherhood (Cody & Dustin Rhodes) at Fight for the Fallen.</li>
+              <br><li><b>14 seconds:</b> The length of the shortest match in AEW history -- between Jon Moxley and Alex Reynolds on the Dec. 11 episode of Dynamite.</li>
+              </ul>
+            </p> 
+          </div>
+          <div class="col-lg-6">
+            <p>           
+              <ul>
+                <li><b>30 minutes 58 seconds:</b> The length of the longest singles match on AEW Dynamite -- between Kenny Omega and PAC on Feb. 26, 2020.
+                It was an Iron Man match with a 30 minute time limit that went to sudden death over time.</li>
+              <br>
+              <li><b>17 minutes and 18 seconds:</b> The length of the second longest singles match on AEW Dynamite -- between Cody Rhodes and Darby Allin on Jan. 1, 2020.</li>
+                <br>
+              </ul>
+            </p> 
+          </div>
+        <br>
+        <br>
+        <div class="col-lg-12">
+          <p>
+            <b>How to use the chart:</b>
+            <ul>
+              <li>Use the slider to choose a different timeframe.
+              </li>
+              <li>Filter results by event show (PPV, Dynamite, Dark).
+              </li>
+              <li>Filter results by singles, tag team, others, or all matches.
+              </li>
+              <li>Filter results by event title.</li>
+              <li>Hover over the bar to see the date and event where the match occured
+                along with the match duration.</li>
+            </ul>
+          </p>
+        </div>
+      <!--/ .container -->
+      </div>
+      <div class="row">
+        <h1 class="centered">Total Ring Action Times in AEW History</h1>
+        <p class="centered">(as of March 11, 2020)</p>
+        <div class="col-lg-12">
+        <p>
+          This chart shows which wrestlers are given the most time for matches.  
+        </p>
+        </div>
+        <div class="col-lg-6">
+          <p>           
+          <ul>
+          <li><b>Most In Ring Time:</b>
+            <br>Kenny Omega has wrestled a total of 7 hours 56 minutes and 20 seconds. 
+            Omega also has the greatest total time in singles matches with 
+            3 hours 44 minutes and 52 seconds.          
+          </li>
+          <br>
+          <li><b>Average Match Time (Singles):</b>
+            <br>Kenny Omega's singles matches on average lasts around 22.5 minutes.
+            <br><br>Although Chris Jericho has not been much active in singles competition, 
+            he has the second greatest average time per match, suggesting that when he 
+            does go in the ring alone, don't expect the match to end quickly. 
+            His average match time is just over 20 minutes.
+          </li>
+          </ul>
+          </p> 
+        </div>
+        <div class="col-lg-6">
+          <p>           
+            <ul>
+              <li><b>Most In Ring Time(Tag Team):</b>
+                <br>The Young Bucks (Nick Jackson & Matt Jackson) have wrestled together
+                for a total of 3 hours and 29 minutes in two-on-two tag team action.
+              </li>
+              <br>
+            </ul>
+          </p> 
+        </div>
+      <br>
+      <br>
+      <div class="col-lg-12">
+        <p>
+          <b>How to use the chart:</b>
+          <ul>
+            <li>Use the slider to choose a different timeframe.
+            </li>
+            <li>Filter results by event show (PPV, Dynamite, Dark).
+            </li>
+            <li>Filter results by singles, tag team, others, or all matches.
+            </li>
+            <li>Hover over the bar to see the wrestler's average match duration (in seconds), 
+              total number of matches, and total match time.</li>
+          </ul>
+        </p>
+    <!--/ .container -->
+
+    </div>
+  </section>
+
+  <section id="section_wednesday" name="section_wednesday">
+    <br><br><br>
+      <div id="wedsnightwars">
+        <div class="container">
+          <div class="row">
+            <h1 class="centered">Wednesday Night Wars</h1>
+            <br>
+            <br>
+            <div class="col-lg-4">
+              <p>AEW's Dynamite debuted on the TNT network on October 2, 2019. 
+                Since then, AEW and WWE's NXT have been battling for viewership 
+                Wednesday nights with Dynamite airing on TNT and NXT airing on USA Network. 
+                While it is debatable how relevant the Nielson ratings are as a 
+                performance indicator, there is still interest in comparing the 
+                viewership and Nielson ratings between WWE NXT and AEW Dynamite.              
+              </p>
+              <p>
+                WarnerMedia announced on January 15th, 2020 that TNT's AEW Dynamite 
+                has been renewed through 2023. In addition, they will also be launching 
+                a second series on a second night.              
+              </p>
+            </div>
+            <div class="col-lg-8">
+              <div class='tableauPlaceholder' id='viz1580434037784' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AE&#47;AEW2019&#47;WednesdayNightWars&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AEW2019&#47;WednesdayNightWars' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AE&#47;AEW2019&#47;WednesdayNightWars&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1580434037784');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>          
+              <p>Ratings data obtained from <a href="http://www.showbuzzdaily.com/">ShowBuzzDaily</a>
+                <br>
+                Note that AEW Dynamite did not air on December 25, 2019.</p>
+            </div>
+        </div>
+        <div class="row">
+          <br>
+
+        </div>
+          <br>
+          <hr>
+        </div>
+        <!--/ .container -->
+      </div>
+    </section>
+
+    <section id="section_activity" name="section_activity">
+      <br><br><br>
+      <div id="wrestlerdash">
+        <div class="container">
+          <div class="row">
+            <h1 class="centered">Interactive Wrestler Activity Chart</h1>
+            <br>
+            <br>
+            <p>
+              This interactive timeline allows you to compare the in-ring activities of selected wrestlers.
+              Each match is color coded by whether it appeared on Dynamite, Dark, Pay Per View, 
+              or a Pay per View Pre-Show, along with whether the wrestler won, loss, or had a draw.
+              <br>
+              <br>
+              <b>How to use chart:</b>
+              <br>Select one or more wrestlers from the dropdown list for comparison.
+              <br>Use the slider to choose a timeframe.
+              <br>Hover over each W/L/D marker to see the match card details.
+            </p>
+            <div class="col-lg-12">
+        </div>
+        <!--/ .container -->
+      </div>
+    </section>
+
+    <section id="section_details" name="section_details">
+      <br><br><br>
+      <div id="section_details">
+        <div class="container">
+          <div class="row">
+            <h1 class="centered">Data</h1>
+            <br>
+            <br>
+            <div class="col-lg-12">
+              <p>Data was retrieved from <a href="https://www.cagematch.net/">Cagematch The Internet Wrestling Database</a>.
+                The scraping was performed using Python and Beautiful Soup. 
+                The data was then written to JSON files and imported into Tableau for analysis.
+              </p>
+              <p>All matches aired on Pay Per View events, Dynamite, and Dark are counted in the data. 
+                This includes unsanctioned matches, battles royal, and unofficial matches.
+                Singles matches are classified as one-on-one matches involving at most two wrestlers.
+                Tag Team matches are classified as two-on-two matches involving at most four wrestlers.
+                Others include all other matches that are not Singles or Tag Team matches,
+                such as three-way or four-way matches, 
+                battles royal, handicap matches, etc. 
+                The wrestlers are ranked by total number of wins.
+                Note that this differs from how AEW officially computes their rankings.
+              </p>
+            </div>
+          </div>
+          <br>
+          <hr>
+        </div>
+        <!--/ .container -->
+      </div>
+    </section>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; 2020 <strong>Visualizing the Elite</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
