@@ -29,6 +29,13 @@ p {
   text-align: center;
 }
 
+.image{
+  width: 90%;
+}
+
+.padded{
+  margin: 20px;
+}
 /* Links */
 
 a {
