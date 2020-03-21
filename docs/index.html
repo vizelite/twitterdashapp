@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" 
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159284321-2"></script>
 <script>
@@ -11,13 +14,21 @@
   gtag('config', 'UA-159284321-2');
 </script>
 
-
-  <meta charset="UTF-8">
-  <title>AEW Dynamite Twitter Report</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
+<!-- COMMON TAGS -->
+<meta charset="utf-8">
+<title>AEW Dynamite Twitter Report</title>
+<!-- Search Engine -->
+<meta name="description" content="Analysis of Twitter Activity During All Elite Wrestling Dynamite">
+<meta name="image" content="https://user-images.githubusercontent.com/45111514/77180656-409fa900-6a98-11ea-9d6e-26f744dba823.jpeg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="AEW Dynamite Twitter Report">
+<meta itemprop="description" content="Analysis of Twitter Activity During All Elite Wrestling Dynamite">
+<meta itemprop="image" content="https://user-images.githubusercontent.com/45111514/77180656-409fa900-6a98-11ea-9d6e-26f744dba823.jpeg">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="AEW Dynamite Twitter Report">
+<meta name="og:description" content="Analysis of Twitter Activity During All Elite Wrestling Dynamite">
+<meta name="og:type" content="website">
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
@@ -108,7 +119,7 @@
               This is an on-going project and updates will be made regularly. I will continue to make data analyses and visualizations
               around AEW and post them on my social media channels. Feedback and comments are always welcomed. 
               <br>
-              Find me on Twitter <a href="https://twitter.com/vizelitedotcom" target="_blank">@vizelitedotcom</a>,
+              Find me on Twitter <a href="https://twitter.com/vizwrestling" target="_blank">@vizwrestling</a>,
               on Facebook at <a href="https://www.facebook.com/Visualize-Wrestling-109709793994402/" target="_blank">Vizualizing Wrestling</a>,
               or send me an email at visualizingtheelite at gmail dot com.
             </p>
@@ -150,8 +161,12 @@
                 </tbody>
             </table>
             </div>
-            <div class="col-lg-6">
-              <img src="https://user-images.githubusercontent.com/45111514/77180656-409fa900-6a98-11ea-9d6e-26f744dba823.jpeg" class="image mx-auto d-block">
+            <!-- <div class="col-lg-6"> -->
+            <div class="iframe-container">
+              <!-- <img src="https://user-images.githubusercontent.com/45111514/77180656-409fa900-6a98-11ea-9d6e-26f744dba823.jpeg" 
+              alt="total number of tweets over time"
+              class="image mx-auto d-block"> -->
+              <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~cinhui/2.embed"></iframe>
             </div>
           </div>
           <hr>  
@@ -182,9 +197,13 @@
                 from the eastern United States with the exception of California.
               </p>
             </div> 
-            <div class="col-lg-6">
-              <img src="https://user-images.githubusercontent.com/45111514/77137813-73688380-6a3d-11ea-870d-cf2213cd877c.jpeg" class="image mx-auto d-block" >
-            </div>
+            <!-- <div class="col-lg-6"> -->
+            <div class="iframe-container">
+              <!-- <img src="https://user-images.githubusercontent.com/45111514/77137813-73688380-6a3d-11ea-870d-cf2213cd877c.jpeg" 
+              alt="map of twitter user locations"
+              class="image mx-auto d-block" > -->
+                <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~cinhui/4.embed"></iframe>            
+              </div>
           </div>
           <hr>
       </div>
@@ -202,7 +221,7 @@
             <p>
             These tables show the 20 most frequently used #hashtags in the data set
             along with its frequency. Note that the hashtags underlined in bold were 
-            used in the search query to collect tweets via the Twitter API.
+            terms used in the query to collect tweets via the Twitter Streaming API.
             </p>
             <div class="col-lg-1">
             </div>
@@ -280,8 +299,12 @@
                 Let's look at who and what they are retweeting.
               </p>
             </div>   
-            <div class="col-lg-6">
-              <img src="https://user-images.githubusercontent.com/45111514/77127565-0d6b0480-6a1b-11ea-8678-49e626c920cb.png" class="image mx-auto d-block">
+            <!-- <div class="col-lg-6"> -->
+            <div class="iframe-container">
+              <!-- <img src="https://user-images.githubusercontent.com/45111514/77127565-0d6b0480-6a1b-11ea-8678-49e626c920cb.png" 
+              alt="pie chart of percentage of tweets by type"
+              class="image mx-auto d-block"> -->
+              <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~cinhui/6.embed"></iframe>
             </div>         
           </div>
           <hr>
@@ -424,6 +447,7 @@
                 <li>Visualization and dashboard: Matplotlib, Plot.ly, Dash, Heroku, Bootstrap</li>
               </ul>
               <br>
+              Terms that were tracked on Twitter: #AEW, #AllEliteWrestling, #AEWDark, #AEWDynamite, #AEWonTNT, #WWE, #NXT
             </p>
           </div>
         </div>
