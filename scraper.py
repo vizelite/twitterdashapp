@@ -2,7 +2,6 @@ import settings
 import credentials
 import tweepy
 import dataset
-from textblob import TextBlob
 from sqlalchemy.exc import ProgrammingError
 import json
 import os
@@ -19,7 +18,7 @@ class StreamListener(tweepy.StreamListener):
         created_at = status.created_at
         id_str = status.id_str
         text = status.text
-        
+              
         in_reply_to = status.in_reply_to_screen_name
 
         user_name = status.user.screen_name
@@ -35,21 +34,17 @@ class StreamListener(tweepy.StreamListener):
         retweet_count = status.retweet_count
         favorites_count = status.favorite_count
 
-        blob = TextBlob(text)
-        sent = blob.sentiment
-        polarity=sent.polarity
-        subjectivity=sent.subjectivity
+        polarity= None
+        subjectivity= None
+
+        if status.coordinates:
+            coords = json.dumps(coords)
+
 #         longitude = None
 #         latitude = None
 #         if status.coordinates:
 #             longitude = status.coordinates['coordinates'][0]
 #             latitude = status.coordinates['coordinates'][1]
-
-        if status.geo:
-            geo = json.dumps(geo)
-
-        if status.coordinates:
-            coords = json.dumps(coords)
 
         was_retweet_id = None
         was_retweet_user = None
@@ -114,7 +109,6 @@ def clean_ascii(text):
     else:
         return None
 
-TRACK_TERMS = ['#AEW', '#AllELiteWrestling', '#AEWDark', '#AEWDynamite', '#AEWonTNT', '#WWE', '#NXT']
 TABLE_ATTRIBUTES = "created_at TIMESTAMP, id_str VARCHAR(255), text VARCHAR(255), in_reply_to VARCHAR(255), \
             was_retweet_id VARCHAR(255), was_retweet_user VARCHAR(255), \
             user_name VARCHAR(255), user_location VARCHAR(255), user_description VARCHAR(255), user_created VARCHAR(255), \
@@ -122,7 +116,9 @@ TABLE_ATTRIBUTES = "created_at TIMESTAMP, id_str VARCHAR(255), text VARCHAR(255)
             user_followers_count INT, user_friends_count INT, \
             retweet_count INT, favorites_count INT, polarity DOUBLE PRECISION, subjectivity DOUBLE PRECISION"
 
-TABLE_NAME = "dynamite24"
+TRACK_TERMS = ['#AEW', '#AllELiteWrestling', '#AEWDark', '#AEWDynamite', '#AEWonTNT', '#WWE', '#NXT']
+TRACK_TERMS = ['#AEW', '#AllELiteWrestling', '#AEWDark', '#AEWDynamite', '#AEWonTNT']
+TABLE_NAME = "march24_"
 
 # CONNECTION_STRING = "sqlite:///elite.db"
 # DATABASE_URL = CONNECTION_STRING
